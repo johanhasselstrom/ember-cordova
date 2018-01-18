@@ -18,7 +18,7 @@ describe('Cordova Create Task', function() {
 
   var setupCreateTask = function() {
     //TODO - factor me out
-    rawDouble = td.replace(cordovaProj.raw, 'create');
+    rawDouble = td.replace(cordovaProj, 'create');
 
     var CreateCdvTask = require('../../../lib/tasks/create-cordova-project');
     create = new CreateCdvTask(mockProject);
